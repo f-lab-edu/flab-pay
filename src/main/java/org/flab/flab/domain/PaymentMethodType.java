@@ -1,5 +1,17 @@
 package org.flab.flab.domain;
 
 public enum PaymentMethodType {
-    BC_CARD
+    CARD(true),
+    CASH(true),
+    POINT(false);
+
+    private final boolean mainPaymentMethod;
+
+    PaymentMethodType(boolean mainPaymentMethod) {
+        this.mainPaymentMethod = mainPaymentMethod;
+    }
+
+    public boolean isMainPaymentMethod() {
+        return mainPaymentMethod;
+    }
 }
