@@ -3,11 +3,10 @@ package org.flab.flab.domain;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity()
 @Table(name = "payments")
-public class Payments {
+public class Payment {
 
     @Id()
     @GeneratedValue(strategy = GenerationType.IDENTITY)

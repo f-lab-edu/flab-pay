@@ -1,7 +1,6 @@
 package org.flab.flab.domain;
 
 import jakarta.persistence.*;
-import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 
 import java.time.LocalDateTime;
 
@@ -35,5 +34,5 @@ public class PaymentDetail {
     private LocalDateTime refundAt;
 
     @ManyToOne()
-    private Payments payments;
+    private Payment payment;
 }
