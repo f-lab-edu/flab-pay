@@ -19,6 +19,9 @@ public class PaymentDetail {
     private Long amount;
 
     @Column()
+    private Long taxFreeAmount;
+
+    @Column()
     private PaymentDetailStatus status;
 
     @Column()

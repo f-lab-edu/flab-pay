@@ -1,0 +1,9 @@
+
+flab:
+    client:
+      kakao:
+        connectionTimeout: 3000
+        readTimeout: 3000
+        host: 'http:localhost'
+        maxConnPerRoute: 100
+        idleConnectionTimeout: 3000

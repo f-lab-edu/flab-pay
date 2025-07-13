@@ -13,7 +13,16 @@ public class Payment {
     private Long id;
 
     @Column()
+    private String tradeNo;
+
+    @Column()
+    private String itemName;
+
+    @Column()
     private Long amount;
+
+    @Column()
+    private Long taxFreeAmount;
 
     @Column()
     private PaymentStatus status;

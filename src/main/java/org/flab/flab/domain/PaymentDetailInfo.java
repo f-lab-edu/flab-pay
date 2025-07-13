@@ -6,6 +6,9 @@ import java.util.Objects;
 public class PaymentDetailInfo implements Serializable {
 
     private String authNumber;
+    private String approvedURL;
+    private String cancelURL;
+    private String failURL;
 
     @Override
     public boolean equals(Object o) {
